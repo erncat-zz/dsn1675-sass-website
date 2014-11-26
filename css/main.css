@@ -16,17 +16,26 @@ html {
     box-sizing: inherit;
 }
 
-.billboard {
-    background-image: url(/Users/ernmons/Documents/Year%202%20Semester%201/Web%20Development%202/github/dsn1675-sass-website/assets/billboard.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding-top:30em;
+.flex {
+    width: 100%;
 }
 
+.billboard {
+    position: relative;
+}
+
+.headline-button {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+
 .headline {
-    font-size: 4em;
+    font-size: 2em;
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .header {
@@ -37,6 +46,8 @@ html {
     text-align: center;
     font-size: 3em;
     position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 
@@ -143,8 +154,8 @@ body {
         float: center;
     }
     
-    .billboard {
-        margin-top: 10em;
+    .flex {
+        margin-top: 20em;
     }
 
 }
@@ -163,6 +174,16 @@ body {
         margin-top: 5em;
     }
     
+    .headline {
+        font-size: 4em;
+    }
+    
+    .flex {
+        margin-top: 10em;
+    }
+    
+
+   
 }
 
 @media only screen and (min-width: 60em) {
@@ -188,6 +209,7 @@ body {
     .logo {
         float: left;
     }
+    
         
 }
 
