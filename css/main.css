@@ -15,3 +15,175 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+.billboard {
+    background-image: url(/Users/ernmons/Documents/Year%202%20Semester%201/Web%20Development%202/github/dsn1675-sass-website/assets/billboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top:20em;x
+}
+
+.header {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 3em;
+    position: fixed;
+}
+
+
+.nav {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding:0;
+}
+
+.nav ul {
+    text-align: center;
+    margin-left: 0;
+}
+
+.nav li {
+    margin: 0;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active,
+.nav .nav-current,
+.nav .nav-current:link,
+.nav .nav-current:visited {
+    color: limegreen;
+}
+
+.backtotop {
+    text-decoration: none;
+    color: white;
+    text-align:center;
+}
+
+.contentinfo {
+    color: white;
+    text-align: center;
+
+}
+
+.skip-links {
+    margin:0;
+    padding:0;
+    list-style-type: none;   
+}
+
+.skip-links a {
+    position: absolute;
+    top: -3em;
+    background-color: #000;
+    color: #FFF;
+    padding: 0.5e, 0.75em;
+    font-weight: bold;
+    text-align: none;
+}
+
+.skip-links a:focus {
+    top: 0;
+}
+
+.logo {
+    width: 180px;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.layouts {
+    width: 100%;
+}
+
+@media only screen and (min-width: 25em) {
+
+    .nav li {
+        display: inline-block;
+        border: 0;
+    }
+    
+    .nav {
+        text-align: center;
+    }
+    
+    .logo {
+        float: center;
+    }
+    
+    .billboard {
+        margin-top: 10em;
+    }
+
+}
+
+@media only screen and (min-width: 38em) {
+    
+    .navfooter {
+        float: right;
+    }
+    
+    .nav-top {
+        margin-top: 1.8em;
+    }
+    
+    .billboard {
+        margin-top: 5em;
+    }
+    
+}
+
+@media only screen and (min-width: 60em) {
+    
+    
+     .nav-top {
+        float: right;
+        margin-top: 1.8em;
+        margin-right: 3em;
+    }
+    
+    .nav-bottom {
+        float: right;
+        margin-right: 3em;
+        margin-top: 1em;
+    }
+    
+    .contentinfo, .backtotop {
+        float: right;
+        margin-right: 5em;
+    }
+    
+    .logo {
+        float: left;
+    }
+        
+}
+
+

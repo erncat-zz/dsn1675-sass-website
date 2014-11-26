@@ -2,14 +2,96 @@
 <html lang="en-ca">
 <head>
     <meta charset="utf-8">
-    <title>SASS</title>
+    <title>Division</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Roboto:400,500,700,900,400italic,500italic,700italic,900italic,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Pacifico' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/typography.css" rel="stylesheet">
 </head>
 <body>
+    
+    <ul class="skip-links">
+        <li><a href="#nav">Jump to navigation</a></li>
+        <li><a href="#main">Jump to main content</a></li>
+    </ul>
+    
+    <header role="header" class="header">
+        <div class="grid">
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+                <a href="index.html">
+                    <img class="logo push-none" src="assets/division-logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+                <nav role="navigation" id="nav">
+                    <ul class="nav nav-top pad-bottom giga brand-family">
+                        <li><a class="gutter-half" href="pricing.html">Pricing</a></li>
+                        <li><a class="gutter-half" href="signup.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<main role="main" id="main" class="main">
+    
+    
+    <div class="billboard">
+        <div>
+            <h1>This is the Header</h1>
+        </div>
+        <div>
+            <form method="start" action="pricing.html">
+                <button type="submit" a href="pricing.html" alt="get started">Start Building</button>
+            </form>
+        </div>
+    </div>
+    
+    <div>
+        <h2 class="pad-top">Layout Options Preview</h2>
+    </div>
+    <div class="grid">
+        <div class="unit unit-s-1 unit-m-1-2 unit-l-1-4 ">
+            <img class="layouts island" src="assets/image.jpg" alt="picture">
+        </div>
+        <div class="unit unit-s-1 unit-m-1-2 unit-l-1-4 layouts ">
+            <img class="layouts island" src="assets/image.jpg" alt="picture">
+        </div>
+        <div class="unit unit-s-1 unit-m-1-2 unit-l-1-4 ">
+            <img class="layouts island" src="assets/image.jpg" alt="picture">
+        </div>
+        <div class="unit unit-s-1 unit-m-1-2 unit-l-1-4 ">
+            <img class="layouts island" src="assets/image.jpg" alt="picture">
+        </div>
+    </div>
+ 
+    
+    
+    
+    
+</main>
+    
+<footer role="footer" class="footer">
+    <div class="grid">
+        <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+            <nav role="navigation" id="nav">
+                <ul class="nav nav-bottom pad-top mega brand-family">
+                    <li><a class="gutter-half" href="pricing.html">Pricing</a></li>
+                    <li><a class="gutter-half" href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div role="contentinfo" class="unit unit-s-1 unit-m-1 unit-l-1">
+            <a class="micro backtotop pad-top" href="#top">Back To Top</a>
+        </div>
+        <div role="contentinfo" class="unit unit-s-1 unit-m-1 unit-l-1">
+            <p class="contentinfo push-none micro">©2014 &lt;div&gt;ision</p>
+        </div>
+    </div>
+</footer>
+    
+
     
     
     

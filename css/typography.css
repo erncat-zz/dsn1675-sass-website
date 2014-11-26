@@ -1,5 +1,5 @@
 html {
-  font: normal 100%/1.5 "Libre Baskerville", sans-serif;
+  font: normal 100%/1.5 "PT Sans Narrow", serif;
 }
 
 @media only screen and (min-width: 60em) {
@@ -191,5 +191,6 @@ sub {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Pacifico", sans-serif;
+    text-align: center;
 }
