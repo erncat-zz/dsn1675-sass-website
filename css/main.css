@@ -21,7 +21,12 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding-top:20em;x
+    padding-top:30em;
+}
+
+.headline {
+    font-size: 4em;
+    color: white;
 }
 
 .header {
