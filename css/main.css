@@ -18,6 +18,7 @@ html {
 
 .flex {
     width: 100%;
+    margin-top: 12.25em;
 }
 
 .billboard {
@@ -33,7 +34,7 @@ html {
 
 
 .headline {
-    font-size: 2em;
+    font-size: 1.8em;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
@@ -96,6 +97,11 @@ html {
 
 }
 
+hr {
+    border: solid 1px black;
+    
+}
+
 .skip-links {
     margin:0;
     padding:0;
@@ -139,6 +145,10 @@ body {
     width: 100%;
 }
 
+.copyright {
+    color: #E2E2E2;
+}
+
 @media only screen and (min-width: 25em) {
 
     .nav li {
@@ -155,7 +165,11 @@ body {
     }
     
     .flex {
-        margin-top: 20em;
+        margin-top: 10em;
+    }
+    
+    .headline {
+        font-size: 2.5em;
     }
 
 }
@@ -167,21 +181,25 @@ body {
     }
     
     .nav-top {
-        margin-top: 1.8em;
-    }
-    
-    .billboard {
-        margin-top: 5em;
+        margin-top: 2em;
     }
     
     .headline {
         font-size: 4em;
     }
     
-    .flex {
-        margin-top: 10em;
+    .logo {
+        float: left;
     }
     
+    .flex {
+        margin-top: 6em;
+    }
+    
+    .headline-button {
+        padding-bottom: 2em;
+       
+    }
 
    
 }
@@ -191,7 +209,7 @@ body {
     
      .nav-top {
         float: right;
-        margin-top: 1.8em;
+        margin-top: 2em;
         margin-right: 3em;
     }
     
@@ -210,6 +228,21 @@ body {
         float: left;
     }
     
+    .flex {
+        margin-top: .2em;
+    }
+    
+    .headline-button {
+        padding-bottom: 9em;
+       
+    }
+    
+    .review {
+        -moz-column-count: 2;
+       -moz-column-gap: 40px;
+       -webkit-column-count: 2;
+       -webkit-column-gap: 40px;
+    }
         
 }
 
