@@ -18,7 +18,6 @@ html {
 
 .flex {
     width: 100%;
-    margin-top: 12.25em;
 }
 
 .billboard {
@@ -65,7 +64,6 @@ html {
     padding: 0;
     text-align: center;
     font-size: 3em;
-    position: fixed;
     top: 0;
     z-index: 1000;
 }
@@ -162,6 +160,13 @@ body {
 
 .layouts {
     width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 328px;
+}
+
+.captions {
+    text-align: center;
 }
 
 .copyright {
@@ -183,9 +188,6 @@ body {
         float: center;
     }
     
-    .flex {
-        margin-top: 10em;
-    }
     
     .headline {
         font-size: 2.5em;
@@ -224,6 +226,10 @@ body {
         padding-bottom: 2em;
        
     }
+    
+    .header {
+        position: fixed;
+    }
 
    
 }
@@ -257,7 +263,7 @@ body {
     }
     
     .headline-button {
-        padding-bottom: 9em;
+        padding-bottom: 10em;
        
     }
     
