@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>SASS</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Roboto:400,500,700,900,400italic,500italic,700italic,900italic,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Pacifico' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/typography.css" rel="stylesheet">
@@ -18,12 +18,12 @@
     
     <header role="header" class="header">
         <div class="grid">
-            <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-2">
                 <a href="index.html">
                     <img class="logo push-none" src="assets/division-logo.svg" alt="logo">
                 </a>
             </div>
-            <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+            <div class="unit unit-xs-1 unit-s-1 unit-m-2-3 unit-l-1-2">
                 <nav role="navigation" id="nav">
                     <ul class="nav nav-top pad-bottom peta brand-family">
                         <li><a class="gutter-half" href="index.html">Home</a></li>
@@ -36,66 +36,92 @@
         </div>
     </header>
     
-<main>
+<main class="forms">
     
-    <form action="thanks.html" method="post">
+    <h2 class="push-0 pad-top">Personal Information</h2>
+    
+    <form action="thanks.html" method="post" class="signup island">
     
     <div>
-        <label for="name">First Name</label>
+        <label class="box" for="name">First Name</label>
         <input id="name">
     </div>
     <div>
-        <label for="name">Last Name</label>
+        <label class="box" for="name">Last Name</label>
         <input id="name">
     </div>
     <div>
-        <label for="email">E-mail</label>
+        <label class="box" for="email">E-mail</label>
         <input type="email" id="email">
     </div>
-    
-<!--
-Input Types:
-- search
-- tel
-- url
-- number
-- password
-- color
-- time
-- date
-- file
--->
+     <div>
+        <label class="box" for="phone">Phone Number</label>
+        <input type="tel" id="phone">
+    </div>
     <div>
-        <label for="awesomeness">Level of Awesomeness!</label>
-        <input type="range" id="awesomeness" min="1" max="11" value="10">
+        <label class="box" for="user">Username</label>
+        <input type="#" id="#">
+    </div>
+    <div>
+        <label class="box" for="password">Password</label>
+        <input type="password" id="password">
+    </div>
+    <div>
+        <label class="box" for="password">Re-Enter Password</label>
+        <input type="password" id="password">
+    </div>
+        
+    <div>
+        <label class="box" for="version">Version</label>
+        <select id="version">
+        <option>Standard</option>
+        <option>Plus</option>
+        <option>Pro</option>
+        </select>
     </div>
     
     <div>
-        <label for="stuff">Stuff</label>
-        <textarea id="stuff"></textarea>
+        <p class="push-0 pad-top">Method Of Payment:</p> 
+        <input type="radio" id="ok" name="level-of-awesomeness">
+        <label for="ok">Mastercard</label>
+        <input type="radio" id="good" name="level-of-awesomeness">
+        <label for="good">Visa</label>
+        <input type="radio" id="amaze" name="level-of-awesomeness">
+        <label for="amaze">Paypal</label>
     </div>
+        
+
+
+        
+    <h2 class="push-0 pad-top"> Credit Card Information </h2>
+    
+    <div>
+        <label class="box" for="card">Credit Card Number</label>
+        <input id="number" type="text">
+    </div>
+    <div>
+        <label class="box" for="card">Expiry Date</label>
+        <input id="number" type="text">
+    </div>
+    <div>
+        <label class="box" for="card">cvv</label>
+        <input id="number" type="text">
+    </div>
+    
+    <div>
+        <label for="terms" class="terms-title">Terms & Conditions</label>
+        <textarea readonly id="terms">These are the terms and conditions</textarea>
+    </div>
+    
+
     
     <div>
         <input type="checkbox" id="terms">
         <label for="terms">Do you accept these terms?</label>
     </div>
-    
     <div>
-        <input type="radio" id="ok" name="level-of-awesomeness">
-        <label for="ok">Okay</label>
-        <input type="radio" id="good" name="level-of-awesomeness">
-        <label for="good">Good</label>
-        <input type="radio" id="amaze" name="level-of-awesomeness">
-        <label for="amaze">Amaze-Balls!</label>
-    </div>
-    
-    <div>
-        <label for="fav-color">Version</label>
-        <select id="fav-colour">
-        <option>Free</option>
-        <option>Pro</option>
-        <option>Max</option>
-        </select>
+        <input type="checkbox" id="terms">
+        <label for="terms">Sign up for mailing list</label>
     </div>
     
     <div>
@@ -119,7 +145,7 @@ Input Types:
             </nav>
         </div>
         <div role="contentinfo" class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
-            <a class="micro backtotop pad-top" href="#top">Back To Top</a>
+            <a class="micro backtotop " href="#top">Back To Top</a>
         </div>
         <div role="contentinfo" class="unit unit-s-1 unit-m-1 unit-l-1">
             <p class="contentinfo copyright push-none micro">©2014 &lt;div&gt;ision</p>
