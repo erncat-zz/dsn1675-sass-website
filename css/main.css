@@ -301,6 +301,10 @@ body {
        -webkit-column-gap: 40px;
     }
     
+    .xl {
+        font-size: 6em;
+    }
+    
         
 }
 
