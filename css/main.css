@@ -113,15 +113,25 @@ html {
     color: #a9ba04;
 }
 
-.price-button a:hover,
-.price-button a:focus,
-.price-button a:active,
-.price-button .nav-current,
-.price-button .nav-current:link,
-.price-button .nav-current:visited {
-    color: #a9ba04;
+.price-button {
+    display:block;
 }
 
+.price-button:hover .l-green {
+    background-color: #d8d559;
+}
+
+.price-button:hover .m-green {
+    background-color: #b2b219;
+}
+
+.price-button:hover .d-green {
+    background-color: #939014;
+}
+
+.price-button:hover .price-details {
+    color: #fff;
+}
 
 .backtotop {
     text-decoration: none;
@@ -253,7 +263,14 @@ body {
     max-width: 26em;
     margin: 0 auto;
 }
+ .thankyou {
+    background-color: black;
+}
 
+.thankyou-main {
+    background-color: white;
+    padding: 8em 0;
+}
 
 
 @media only screen and (min-width: 25em) {
@@ -322,6 +339,13 @@ body {
     
     .intro-pricing {
         margin-top: 5em;
+        max-width: 30em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .thankyou-main {
+        padding-top: 14em;
     }
 
    
@@ -373,6 +397,9 @@ body {
     
     .intro-pricing {
         margin-top: 4em;
+        max-width: 30em;
+        margin-left: auto;
+        margin-right: auto;
     }
     
         
