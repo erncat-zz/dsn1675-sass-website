@@ -85,6 +85,15 @@ html {
     margin: 0;
 }
 
+.terms-conditions {
+    height: 10em;
+    width: 96%
+}
+
+.field {
+    width: 35%;
+}
+
 
 
 .nav a,
@@ -104,6 +113,16 @@ html {
     color: #a9ba04;
 }
 
+.price-button a:hover,
+.price-button a:focus,
+.price-button a:active,
+.price-button .nav-current,
+.price-button .nav-current:link,
+.price-button .nav-current:visited {
+    color: #a9ba04;
+}
+
+
 .backtotop {
     text-decoration: none;
     color: white;
@@ -122,12 +141,55 @@ html {
 
 .box {
     display: inline-block;
-    width: 15em;
+    width: 60%;
 }
 
 hr {
     border: solid 1px black;
     
+}
+
+
+.l-green {
+    border: 10px solid #d8d559;
+    border-radius: 25px;
+    max-width: 300px;
+    min-height: 350px;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style-type: none;
+    position:relative;
+}
+
+.m-green {
+    border: 10px solid #b2b219;
+    border-radius: 25px;
+    max-width: 300px;
+    min-height: 350px;
+    margin: 0 auto;
+    list-style-type: none;
+    position:relative;
+}
+
+.d-green {
+    border: 10px solid #939014;
+    border-radius: 25px;
+    max-width: 300px;
+    min-height: 350px;
+    margin: 0 auto;
+    list-style-type: none;
+    position:relative;
+}
+
+.price-details {
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    color: black;
 }
 
 .skip-links {
@@ -257,6 +319,10 @@ body {
     .forms {
        padding-top: 6em;
     }
+    
+    .intro-pricing {
+        margin-top: 5em;
+    }
 
    
 }
@@ -303,6 +369,10 @@ body {
     
     .xl {
         font-size: 6em;
+    }
+    
+    .intro-pricing {
+        margin-top: 4em;
     }
     
         
